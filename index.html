@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UAE Gratuity Calculator 2024 | Free End of Service Benefit Calculator</title>
+  <meta name="description" content="Calculate your UAE Gratuity (End of Service Benefit) instantly. Free MOHRE-compliant calculator for Limited and Unlimited contracts. Based on UAE Labour Law 2024.">
+  <meta name="keywords" content="UAE gratuity calculator, end of service benefit UAE, EOSB calculator, gratuity calculation 2024, UAE labour law gratuity, MOHRE gratuity, Dubai gratuity calculator, limited contract gratuity, unlimited contract gratuity">
+  <meta name="author" content="Muhammad Junaid">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mjunaid8204.github.io/gratuity-calculator-uae-pro/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="UAE Gratuity Calculator 2024 | Free End of Service Benefit Calculator">
+  <meta property="og:description" content="Free MOHRE-compliant UAE Gratuity Calculator. Calculate End of Service Benefits for Limited and Unlimited contracts instantly.">
+  <meta property="og:url" content="https://mjunaid8204.github.io/gratuity-calculator-uae-pro/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="UAE Gratuity Calculator 2024">
+  <meta name="twitter:description" content="Free UAE End of Service Benefit Calculator. MOHRE compliant. Instant results.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"UAE Gratuity Calculator","url":"https://mjunaid8204.github.io/gratuity-calculator-uae-pro/","description":"Free UAE Gratuity End of Service Benefit Calculator. MOHRE compliant 2024.","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"AED"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is UAE gratuity calculated?","acceptedAnswer":{"@type":"Answer","text":"UAE gratuity is calculated based on 21 days of basic salary for each year of the first 5 years, and 30 days for each year beyond 5 years."}},{"@type":"Question","name":"Who is eligible for UAE gratuity?","acceptedAnswer":{"@type":"Answer","text":"Employees who have completed at least 1 year of continuous service in UAE private sector are eligible."}},{"@type":"Question","name":"What is the maximum UAE gratuity?","acceptedAnswer":{"@type":"Answer","text":"The maximum gratuity is 2 years of basic salary."}}]}</script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--primary:#006400;--primary-dark:#004d00;--bg:#f0f4f0;--card:#fff;--text:#1a1a1a;--text-light:#555;--border:#d0e0d0;--success:#28a745;--shadow:0 4px 20px rgba(0,100,0,.12)}
+    body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+    .flag-stripe{display:flex;height:6px}
+    .flag-stripe span:nth-child(1){background:#00732f;flex:1}
+    .flag-stripe span:nth-child(2){background:#fff;flex:1}
+    .flag-stripe span:nth-child(3){background:#000;flex:1}
+    .flag-stripe span:nth-child(4){background:#ff0000;width:20px}
+    header{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;padding:2rem 1rem;text-align:center}
+    header h1{font-size:clamp(1.5rem,4vw,2.5rem);font-weight:800;margin-bottom:.5rem}
+    header p{font-size:clamp(.85rem,2vw,1.1rem);opacity:.92;max-width:600px;margin:0 auto}
+    main{max-width:900px;margin:2rem auto;padding:0 1rem}
+    .card{background:var(--card);border-radius:16px;box-shadow:var(--shadow);padding:2rem;margin-bottom:2rem;border:1px solid var(--border)}
+    .card h2{color:var(--primary);font-size:1.4rem;margin-bottom:1.5rem;padding-bottom:.75rem;border-bottom:3px solid var(--primary)}
+    .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;margin-bottom:1.5rem}
+    .form-group{display:flex;flex-direction:column;gap:.4rem}
+    label{font-weight:600;font-size:.9rem;color:var(--text-light)}
+    input,select{padding:.75rem 1rem;border:2px solid var(--border);border-radius:8px;font-size:1rem;background:#fafafa;transition:border-color .2s;width:100%}
+    input:focus,select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(0,100,0,.1);background:#fff}
+    .btn{width:100%;padding:1rem 2rem;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;border:none;border-radius:10px;font-size:1.1rem;font-weight:700;cursor:pointer;transition:transform .2s,box-shadow .2s;letter-spacing:.5px}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,100,0,.35)}
+    .result{display:none;background:linear-gradient(135deg,#e8f5e9,#f1f8e9);border:2px solid var(--success);border-radius:12px;padding:1.5rem;margin-top:1.5rem}
+    .result.show{display:block;animation:fadeIn .4s ease}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+    .result-amount{font-size:2.5rem;font-weight:800;color:var(--primary);text-align:center;padding:1rem;background:#fff;border-radius:10px;margin:1rem 0;box-shadow:0 2px 10px rgba(0,100,0,.1)}
+    .breakdown{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;margin-top:1rem}
+    .breakdown-item{background:#fff;padding:.75rem 1rem;border-radius:8px;border-left:4px solid var(--primary)}
+    .breakdown-label{font-size:.8rem;color:var(--text-light);margin-bottom:.2rem}
+    .breakdown-value{font-weight:700;color:var(--text)}
+    .error{display:none;background:#fff5f5;border:2px solid #f44;border-radius:8px;padding:1rem;margin-top:1rem;color:#c00;font-weight:600}
+    .error.show{display:block}
+    .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-bottom:2rem}
+    .info-card{background:var(--card);border-radius:12px;padding:1.25rem;box-shadow:var(--shadow);border-top:4px solid var(--primary)}
+    .info-card h3{color:var(--primary);margin-bottom:.75rem;font-size:1rem}
+    .info-card ul{list-style:none;font-size:.9rem;color:var(--text-light)}
+    .info-card ul li{padding:.3rem 0 .3rem 1.2rem;position:relative}
+    .info-card ul li::before{content:'checkmark';position:absolute;left:0;color:var(--primary);font-weight:700}
+    details{background:var(--card);border-radius:10px;margin-bottom:.75rem;box-shadow:0 2px 8px rgba(0,0,0,.06);overflow:hidden}
+    summary{padding:1rem 1.25rem;cursor:pointer;font-weight:600;list-style:none;display:flex;align-items:center;gap:.5rem}
+    summary::before{content:'+';font-size:1.2rem;color:var(--primary);font-weight:700;min-width:20px}
+    details[open] summary::before{content:'-'}
+    details p{padding:0 1.25rem 1rem;color:var(--text-light);font-size:.95rem}
+    footer{background:var(--primary-dark);color:#fff;text-align:center;padding:1.5rem;font-size:.85rem}
+    footer a{color:#90ee90;text-decoration:none}
+    @media(max-width:600px){.card{padding:1.25rem}.result-amount{font-size:1.8rem}}
+  </style>
+</head>
+<body>
+  <div class="flag-stripe"><span></span><span></span><span></span><span></span></div>
+  <header>
+    <h1>UAE Gratuity Calculator</h1>
+    <p>Free End of Service Benefit (EOSB) Calculator - MOHRE Compliant 2024</p>
+    <p style="margin-top:.3rem;font-size:.85rem;opacity:.8">Based on Federal Decree-Law No. 33 of 2021</p>
+  </header>
+  <main>
+    <section class="card" aria-label="Gratuity Calculator">
+      <h2>Calculate Your Gratuity</h2>
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="salary">Monthly Basic Salary (AED) *</label>
+          <input type="number" id="salary" placeholder="e.g. 5000" min="0" step="0.01" required>
+          <small style="color:var(--text-light);font-size:.8rem">Basic salary only (excluding allowances)</small>
+        </div>
+        <div class="form-group">
+          <label for="contract">Contract Type *</label>
+          <select id="contract">
+            <option value="">-- Select Contract Type --</option>
+            <option value="unlimited_resign">Unlimited Contract - Resigned</option>
+            <option value="unlimited_terminate">Unlimited Contract - Terminated</option>
+            <option value="limited">Limited Contract</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="years">Years of Service *</label>
+          <input type="number" id="years" placeholder="e.g. 3" min="0" step="0.01" required>
+        </div>
+        <div class="form-group">
+          <label for="months">Additional Months</label>
+          <input type="number" id="months" placeholder="e.g. 6" min="0" max="11" step="1">
+        </div>
+      </div>
+      <button class="btn" onclick="calc()" aria-label="Calculate Gratuity">Calculate Gratuity Now</button>
+      <div class="error" id="err" role="alert"></div>
+      <div class="result" id="res" role="region" aria-label="Result">
+        <div style="font-weight:700;color:#2e7d32;margin-bottom:1rem">Your Estimated Gratuity</div>
+        <div class="result-amount" id="amt"></div>
+        <div class="breakdown" id="brk"></div>
+        <p style="margin-top:1rem;font-size:.8rem;color:var(--text-light)">This is an estimate. Consult MOHRE or a legal professional for exact amounts.</p>
+      </div>
+    </section>
+    <div class="info-grid" aria-label="Contract Information">
+      <div class="info-card">
+        <h3>Unlimited Contract - Resignation</h3>
+        <ul>
+          <li>Less than 1 year: No gratuity</li>
+          <li>1 to 3 years: 1/3 of 21 days per year</li>
+          <li>3 to 5 years: 2/3 of 21 days per year</li>
+          <li>5+ years: Full 21 days per year</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h3>Unlimited Contract - Termination</h3>
+        <ul>
+          <li>Less than 1 year: No gratuity</li>
+          <li>1 to 5 years: 21 days per year</li>
+          <li>5+ years: 30 days per year (above 5)</li>
+          <li>Maximum: 2 years total salary</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h3>Limited Contract</h3>
+        <ul>
+          <li>Less than 1 year: No gratuity</li>
+          <li>First 5 years: 21 days per year</li>
+          <li>Beyond 5 years: 30 days per year</li>
+          <li>Maximum: 2 years total salary</li>
+        </ul>
+      </div>
+    </div>
+    <section aria-label="FAQ">
+      <h2 style="color:var(--primary);margin-bottom:1rem;font-size:1.4rem">Frequently Asked Questions</h2>
+      <details>
+        <summary>What is UAE Gratuity (End of Service Benefit)?</summary>
+        <p>UAE Gratuity is a mandatory payment employers must make to employees upon end of employment. It requires at least 1 year of service and is governed by Federal Decree-Law No. 33 of 2021.</p>
+      </details>
+      <details>
+        <summary>Who is eligible for UAE Gratuity?</summary>
+        <p>All private sector employees in the UAE who have completed at least 1 year of continuous service. The employer must pay gratuity regardless of whether the employee resigned or was terminated.</p>
+      </details>
+      <details>
+        <summary>Is gratuity calculated on basic salary or total salary?</summary>
+        <p>Gratuity is calculated on the basic salary only, excluding allowances such as housing, transport, and other benefits, unless the employment contract states otherwise.</p>
+      </details>
+      <details>
+        <summary>What is the maximum gratuity in UAE?</summary>
+        <p>The maximum gratuity an employee can receive is equivalent to 2 years of basic salary, regardless of how many years they have served.</p>
+      </details>
+      <details>
+        <summary>Does gratuity apply to free zone employees?</summary>
+        <p>Generally yes. However, some free zones like DIFC and ADGM have their own employment laws and EOSB schemes that may differ from the mainland UAE Labour Law.</p>
+      </details>
+    </section>
+  </main>
+  <footer>
+    <p>UAE Gratuity Calculator | MOHRE Compliant 2024</p>
+    <p style="margin-top:.5rem">Based on <a href="https://mohre.gov.ae" target="_blank" rel="noopener">MOHRE</a> guidelines and Federal Decree-Law No. 33 of 2021</p>
+    <p style="margin-top:.5rem;opacity:.7">Muhammad Junaid | <a href="https://github.com/mjunaid8204/gratuity-calculator-uae-pro" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+  <script>
+    function calc(){
+      const err=document.getElementById('err'),res=document.getElementById('res');
+      err.classList.remove('show');res.classList.remove('show');
+      const salary=parseFloat(document.getElementById('salary').value);
+      const contract=document.getElementById('contract').value;
+      const y=parseFloat(document.getElementById('years').value)||0;
+      const m=parseFloat(document.getElementById('months').value)||0;
+      if(!salary||salary<=0){showErr('Please enter a valid basic salary.');return;}
+      if(!contract){showErr('Please select a contract type.');return;}
+      const total=y+(m/12);
+      if(total<1){showErr('Minimum 1 year of service required for gratuity.');return;}
+      const daily=salary/30;
+      let gratuity=0,note='';
+      if(contract==='unlimited_resign'){
+        if(total<3){gratuity=(21*daily*total)*(1/3);note='1/3 of 21 days x '+total.toFixed(2)+' years';}
+        else if(total<5){gratuity=(21*daily*total)*(2/3);note='2/3 of 21 days x '+total.toFixed(2)+' years';}
+        else{gratuity=21*daily*total;note='Full 21 days x '+total.toFixed(2)+' years';}
+      }else if(contract==='unlimited_terminate'){
+        if(total<=5){gratuity=21*daily*total;note='21 days x '+total.toFixed(2)+' years';}
+        else{gratuity=(21*daily*5)+(30*daily*(total-5));note='(21 days x 5) + (30 days x '+(total-5).toFixed(2)+')';}
+      }else{
+        if(total<=5){gratuity=21*daily*total;note='21 days x '+total.toFixed(2)+' years';}
+        else{gratuity=(21*daily*5)+(30*daily*(total-5));note='(21 days x 5) + (30 days x '+(total-5).toFixed(2)+')';}
+      }
+      const max=salary*24;
+      const capped=gratuity>max;
+      if(capped)gratuity=max;
+      document.getElementById('amt').textContent='AED '+gratuity.toLocaleString('en-AE',{minimumFractionDigits:2,maximumFractionDigits:2});
+      document.getElementById('brk').innerHTML='<div class="breakdown-item"><div class="breakdown-label">Daily Salary</div><div class="breakdown-value">AED '+daily.toFixed(2)+'</div></div><div class="breakdown-item"><div class="breakdown-label">Total Service</div><div class="breakdown-value">'+total.toFixed(2)+' Years</div></div><div class="breakdown-item"><div class="breakdown-label">Formula</div><div class="breakdown-value" style="font-size:.85rem">'+note+'</div></div>'+(capped?'<div class="breakdown-item" style="border-color:#ff6600"><div class="breakdown-label">Note</div><div class="breakdown-value" style="color:#ff6600;font-size:.85rem">Capped at 2 years max</div></div>':'');
+      res.classList.add('show');
+      res.scrollIntoView({behavior:'smooth',block:'nearest'});
+    }
+    function showErr(msg){const el=document.getElementById('err');el.textContent='Warning: '+msg;el.classList.add('show');}
+    document.addEventListener('keypress',function(e){if(e.key==='Enter')calc();});
+  </script>
+</body>
+</html>
